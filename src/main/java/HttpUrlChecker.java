@@ -5,7 +5,7 @@ public class HttpUrlChecker{
     public static Matcher getMatcher(String httpSting){
 
 
-        Pattern pattern = Pattern.compile("^(http)://([a-zA-Z])*[.]([a-zA-Z]|[.])*$");
+        Pattern pattern = Pattern.compile("^(http)://([a-zA-Z])*[.]([a-zA-Z]|[.]|[-])*$");
         Matcher matcher = pattern.matcher(httpSting);
 
         return matcher;
